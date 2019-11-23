@@ -1,0 +1,31 @@
+.sidebarmodal {
+  text-align: center;
+  width: auto;
+  height: auto; }
+
+.button-Modal {
+  padding-left: 142px; }
+
+.img {
+  width: 100%; }
+
+.sidebarmodal .btn-dark {
+  position: relative;
+  text-align: center; }
+
+.button-Modal .sidebarmodal img {
+  width: 85%;
+  height: 153px;
+  text-align: center; }
+
+.image {
+  width: 10%;
+  height: auto;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 51%;
+  text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .button-Modal {
+    padding-left: 0px; } }

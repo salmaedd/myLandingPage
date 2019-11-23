@@ -1,0 +1,50 @@
+.lightboximage {
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  padding-left: 135px;
+}
+.img {
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  padding-left: 135px;
+}
+.lightboximage .img {
+  height: auto;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 51%;
+}
+.lightboximage .a.img {
+  height: auto;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 51%;
+}
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+  border: 0px;
+  color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .lightboximage {
+    padding-left: 0px;
+    margin: 12px;
+    height: auto;
+    max-width: auto;
+  }
+  .lightboximage img {
+    padding-left: 0px;
+    height: auto;
+    max-width: auto;
+    width: 94%;
+  }
+  .lightboximage .a.img {
+    padding-left: 0px;
+    height: auto;
+    max-width: auto;
+    width: 94%;
+  }
+}

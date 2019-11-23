@@ -1,12 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import Navbar from "./components/widgets/navbar";
+import mySlider from "./components/widgets/mySlider";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Carrousel from "./components/widgets/carrousel";
+import sidebar from "./components/widgets/sideBar";
+import myModal from "./components/widgets/myModal";
+import headPage from "./components/widgets/headPage";
+import lightBoxImage from "./components/widgets/lightBoxImage";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const routing = (
+  <Router>
+    <Route path="/" component={App} />
+    <Route path="/" component={Navbar} />
+    <div>
+      <Route path="/" component={sidebar} />
+    </div>
+    <br></br>
+    <div className="style-index">
+      <Route path="/Home" component={headPage} />
+    </div>
+    <Route path="/Home" component={lightBoxImage} />
+    <Route path="/Contact-us" component={headPage} />
+    <Route path="/Contact-us" component={Carrousel} />
+    <Route path="/Home" component={myModal} />
+    <Route path="/News" component={mySlider} />
+  </Router>
+);
+ReactDOM.render(routing, document.getElementById("root"));
