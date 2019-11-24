@@ -21,7 +21,7 @@ const routing = (
     </div>
     <br></br>
     <div className="style-index">
-      <Route path="/Home" component={headPage} />
+      <Route path="/" component={headPage} />
     </div>
     <Route path="/Home" component={lightBoxImage} />
     <Route path="/Contact-us" component={headPage} />
