@@ -5,6 +5,8 @@
 }
 .button-Modal {
   padding-left: 142px;
+  text-align: center;
+  margin-left: -100px;
 }
 .img {
   width: 100%;
@@ -30,5 +32,7 @@
 @media screen and (max-width: 600px) {
   .button-Modal {
     padding-left: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }

@@ -6,10 +6,10 @@
   padding: 0; }
 
 .mySlider {
-  padding-left: 10px;
-  padding-right: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
   height: 20%;
-  margin-top: -14px; }
+  bottom: 0; }
 
 @media screen and (max-width: 600px) {
   .mySlider {

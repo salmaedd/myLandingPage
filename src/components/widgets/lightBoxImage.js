@@ -5,7 +5,8 @@ import "../../sass/lightBoxImage.scss";
 
 const images = [
   "https://mir-s3-cdn-cf.behance.net/project_modules/1400/12d1ef52461471.5911b7cb23e21.jpg/1400/1800",
-  "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ce22e052461471.5911b7cb240f9.jpg/1400/1800"
+  "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ce22e052461471.5911b7cb240f9.jpg/1400/1800",
+  "https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5ec8ca52461471.5911b7cb25660.jpg"
 ];
 
 class lightBoxImage extends React.Component {
@@ -44,6 +45,20 @@ class lightBoxImage extends React.Component {
         >
           <img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ce22e052461471.5911b7cb240f9.jpg"
+            srcset="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce22e052461471.5911b7cb240f9.jpg 600w, https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ce22e052461471.5911b7cb240f9.jpg 1200w, https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/ce22e052461471.5911b7cb240f9.jpg 1400w, https://mir-s3-cdn-cf.behance.net/project_modules/fs/ce22e052461471.5911b7cb240f9.jpg 1920w, https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/ce22e052461471.5911b7cb240f9.jpg 2800w"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            class="ImageElement-image-2K6"
+            alt="lightimage1"
+          />
+        </a>
+        <a
+          className="btn-primary-outline"
+          type="button"
+          onClick={() => this.setState({ isOpen: true })}
+          href
+        >
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5ec8ca52461471.5911b7cb25660.jpg"
             srcset="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce22e052461471.5911b7cb240f9.jpg 600w, https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ce22e052461471.5911b7cb240f9.jpg 1200w, https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/ce22e052461471.5911b7cb240f9.jpg 1400w, https://mir-s3-cdn-cf.behance.net/project_modules/fs/ce22e052461471.5911b7cb240f9.jpg 1920w, https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/ce22e052461471.5911b7cb240f9.jpg 2800w"
             sizes="(max-width: 1400px) 100vw, 1400px"
             class="ImageElement-image-2K6"

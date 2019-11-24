@@ -16,18 +16,17 @@ const routing = (
   <Router>
     <Route path="/" component={App} />
     <Route path="/" component={Navbar} />
-    <div>
-      <Route path="/" component={sidebar} />
-    </div>
+
+    <Route path="/" component={sidebar} />
+
     <br></br>
     <div className="style-index">
       <Route path="/" component={headPage} />
+      <Route path="/" component={lightBoxImage} />
+      <Route path="/" component={Carrousel} />
+      <br></br>
+      <Route path="/" component={myModal} />
     </div>
-    <Route path="/Home" component={lightBoxImage} />
-    <Route path="/Contact-us" component={headPage} />
-    <Route path="/Contact-us" component={Carrousel} />
-    <Route path="/Home" component={myModal} />
-    <Route path="/News" component={mySlider} />
   </Router>
 );
 ReactDOM.render(routing, document.getElementById("root"));

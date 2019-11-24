@@ -42,7 +42,7 @@ class myModal extends React.Component {
             onClick={() => this.openModal()}
           >
             {" "}
-            MODAL
+            My MODAL
           </button>
         </div>
 
@@ -54,19 +54,15 @@ class myModal extends React.Component {
           onClickAway={() => this.closeModal()}
         >
           <div className="sidebarmodal">
-            <h1>Title</h1>
+            <h1>Minim</h1>
             <img src={modal1} alt="modal1" />
             <div>
               {" "}
-              <span className="font-weight-bold">Minim E-commerce Website</span>
+              <span className="font-weight-bold">E-commerce Website</span>
               <pre>Salma Edd</pre>
             </div>
 
-            <button
-              className="btn btn-dark"
-              href="javascript"
-              onClick={() => this.closeModal()}
-            >
+            <button className="btn btn-dark" onClick={() => this.closeModal()}>
               Close
             </button>
           </div>
