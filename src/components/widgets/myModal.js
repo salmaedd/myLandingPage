@@ -34,7 +34,7 @@ class myModal extends React.Component {
             onClick={() => this.openModal()}
           >
             {" "}
-            Click here !
+            Pop Up !
           </button>
         </div>
 
@@ -51,7 +51,7 @@ class myModal extends React.Component {
             <div>
               {" "}
               <span className="font-weight-bold">E-commerce Website</span>
-              <pre>Salma Edd</pre>
+              <pre>Laptop</pre>
             </div>
 
             <button className="btn btn-dark" onClick={() => this.closeModal()}>

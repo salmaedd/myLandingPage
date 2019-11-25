@@ -19,12 +19,12 @@ const routing = (
     <Route path="/" component={sidebar} />
     <div className="style-index">
       <Route path="/" component={headPage} />
-      <Route path="/" component={lightBoxImage} />
-      <Route path="/" component={Carrousel} />
+      <Route path="/Home" component={lightBoxImage} />
+      <Route path="/Home" component={Carrousel} />
       <br></br>
-      <Route path="/" component={myModal} />
+      <Route path="/News" component={myModal} />
       <br></br>
-      <Route path="/" component={mySlider} />
+      <Route path="/News" component={mySlider} />
     </div>
   </Router>
 );

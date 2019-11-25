@@ -11,6 +11,8 @@ $(".nav-link").click(function() {
   $(this).addClass("active");
 });
 function myNavbar() {
+  console.log("!!!!!!!!!!!!!!!!!!", `${window.location.origin.toString()}`);
+  var baseUrl = `${window.location.origin.toString()}`;
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <a className="navbar-brand ml-5 font-weight-bold" href="/Home">
@@ -26,25 +28,31 @@ function myNavbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav m-auto">
           <li className="nav-item active">
-            <a className="nav-link text-grey text-uppercase ml-5" href="/">
-              <i class="fas fa-home"></i>&nbsp; Home
+            <a
+              className="nav-link text-grey text-uppercase ml-5"
+              href={baseUrl + "/Home"}
+            >
+              <i className="fas fa-home"></i>&nbsp; Home
               <span className="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-grey text-uppercase ml-5" href="/">
-              <i class="far fa-newspaper"></i>&nbsp; News
+            <a
+              className="nav-link text-grey text-uppercase ml-5"
+              href={baseUrl + "/News"}
+            >
+              <i className="far fa-newspaper"></i>&nbsp; News
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link text-grey text-uppercase ml-5" href="/">
-              <i class="far fa-envelope"></i>&nbsp; Contact us
+              <i className="far fa-envelope"></i>&nbsp; Contact us
             </a>
           </li>
           <li className="nav-item">
