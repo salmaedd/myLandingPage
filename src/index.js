@@ -24,7 +24,7 @@ const routing = (
       <br></br>
       <Route Link="/" component={myModal} />
       <br></br>
-      <Route path="/Contact-us" component={mySlider} />
+      <Route path="/News" component={mySlider} />
     </div>
   </Router>
 );
