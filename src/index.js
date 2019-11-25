@@ -26,6 +26,8 @@ const routing = (
       <Route path="/" component={Carrousel} />
       <br></br>
       <Route path="/" component={myModal} />
+      <br></br>
+      <Route path="/" component={mySlider} />
     </div>
   </Router>
 );

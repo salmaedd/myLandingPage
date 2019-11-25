@@ -1,14 +1,6 @@
 import React from "react";
 import Modal from "react-awesome-modal";
-import modal12 from "../icons/carrouselIcons/sidebar_1.png";
 import modal1 from "../icons/myModal/archi.jpg";
-import modal2 from "../icons/myModal/art-blank.jpg";
-import modal3 from "../icons/myModal/art.jpg";
-import modal4 from "../icons/myModal/black.jpg";
-import modal5 from "../icons/myModal/brick.jpg";
-import modal6 from "../icons/myModal/golden.jpg";
-import modal7 from "../icons/myModal/happypic.jpg";
-import modal8 from "../icons/myModal/selective.jpg";
 
 import "../../sass/myModal.scss";
 

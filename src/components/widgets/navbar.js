@@ -1,13 +1,11 @@
 import React from "react";
-import facebook from "../icons/navbar/facebook.svg";
 import instagram from "../icons/navbar/instagram.png";
 import linkedin from "../icons/navbar/linkedin.svg";
-import twitter from "../icons/navbar/twitter.svg";
 import Snowflake from "../icons/navbar/Snowflake.svg";
 import "../../sass/navbar.scss";
 import $ from "jquery";
 
-$(".nav-link .text-grey .text-uppercase .ml-5").click(function() {
+$(".nav-link").click(function() {
   $(".nav-item").removeClass("active");
   $(this).addClass("active");
 });
