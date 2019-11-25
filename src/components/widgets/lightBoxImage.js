@@ -21,7 +21,7 @@ class lightBoxImage extends React.Component {
 
   render() {
     const { photoIndex, isOpen } = this.state;
-
+    // list des images clickable
     return (
       <div className="lightboximage">
         <a
@@ -68,15 +68,21 @@ class lightBoxImage extends React.Component {
 
         {isOpen && (
           <Lightbox
+            //choose the first picture
             mainSrc={images[photoIndex]}
+            //choose the next picture
             nextSrc={images[(photoIndex + 1) % images.length]}
+            //choose the previous picture
             prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            //close the slider of pictures
             onCloseRequest={() => this.setState({ isOpen: false })}
+            //click on the previous arrow to go to the next picture
             onMovePrevRequest={() =>
               this.setState({
                 photoIndex: (photoIndex + images.length - 1) % images.length
               })
             }
+            //click on the next arrow to go to the next picture
             onMoveNextRequest={() =>
               this.setState({
                 photoIndex: (photoIndex + 1) % images.length

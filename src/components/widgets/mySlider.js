@@ -6,10 +6,11 @@ import "../../sass/mySlider.scss";
 class mySlider extends React.Component {
   constructor(props) {
     super(props);
-
+    // number of pictures from 0 to 4
     this.IMAGE_PARTS = 4;
 
     this.changeTO = null;
+    //time to change from slide to slide in ms
     this.AUTOCHANGE_TIME = 4000;
 
     this.state = { activeSlide: -1, prevSlide: -1, sliderReady: false };
@@ -40,25 +41,25 @@ class mySlider extends React.Component {
       }
     ];
   }
-
+  // initialise the time to start
   componentWillUnmount() {
     window.clearTimeout(this.changeTO);
   }
-
+  // start the slide
   componentDidMount() {
     this.runAutochangeTO();
     setTimeout(() => {
       this.setState({ activeSlide: 0, sliderReady: true });
     }, 0);
   }
-
+  // auto change to the next slide in 4000
   runAutochangeTO() {
     this.changeTO = setTimeout(() => {
       this.changeSlides(1);
       this.runAutochangeTO();
     }, this.AUTOCHANGE_TIME);
   }
-
+  // go to the next slide when clicking the next button
   changeSlides(change) {
     window.clearTimeout(this.changeTO);
     const { length } = this.slides;

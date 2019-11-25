@@ -15,6 +15,7 @@ import "../../sass/carrousel.scss";
 
 function Carrousel() {
   return (
+    // carrousel d'image avec un autPlay
     <div className="carrousel-style">
       <Carousel autoPlay="true" infiniteLoop="true" transitionTime="350">
         <div>

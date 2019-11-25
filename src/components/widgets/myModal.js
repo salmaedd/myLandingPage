@@ -11,13 +11,13 @@ class myModal extends React.Component {
       visible: false
     };
   }
-
+  //change the state of visible to true to show the modal
   openModal() {
     this.setState({
       visible: true
     });
   }
-
+  //change the state of visible to false to close the modal
   closeModal() {
     this.setState({
       visible: false

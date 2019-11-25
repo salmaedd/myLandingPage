@@ -24,6 +24,7 @@
   color: #f1f1f1;
   width: 100px;
 }
+// don't show the side bar when using a mobile
 @media screen and (max-width: 600px) {
   .sidenav {
     visibility: hidden;

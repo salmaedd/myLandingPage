@@ -43,7 +43,10 @@ function myNavbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-grey text-uppercase ml-5" href="/">
+            <a
+              className="nav-link text-grey text-uppercase ml-5"
+              href="/Contact-us"
+            >
               <i className="far fa-envelope"></i>&nbsp; Contact us
             </a>
           </li>

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route } from "react-router-dom";
-
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Navbar from "./components/widgets/navbar";
@@ -14,7 +13,7 @@ import headPage from "./components/widgets/headPage";
 import lightBoxImage from "./components/widgets/lightBoxImage";
 
 const routing = (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <Router basename={process.env.PUBLIC_URL}>
     <Route path="/" component={App} />
     <Route path="/" component={Navbar} />
     <Route path="/" component={sidebar} />
@@ -25,8 +24,8 @@ const routing = (
       <br></br>
       <Route Link="/" component={myModal} />
       <br></br>
-      <Route path="/News" component={mySlider} />
+      <Route path="/Contact-us" component={mySlider} />
     </div>
-  </BrowserRouter>
+  </Router>
 );
 ReactDOM.render(routing, document.getElementById("root"));

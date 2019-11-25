@@ -11,7 +11,7 @@
   height: 20%;
   bottom: 0;
 }
-
+// media query for mobile slider
 @media screen and (max-width: 600px) {
   .mySlider {
     padding-left: 0px;
@@ -38,6 +38,7 @@ $letterStagger: 0.1s;
   height: 100vh;
   color: #fff;
 
+  // mixin code réutilisable , when the slides are ready
   @mixin sliderReady {
     .slider1.s--ready & {
       @content;
