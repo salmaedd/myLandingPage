@@ -34,7 +34,7 @@ class myModal extends React.Component {
             onClick={() => this.openModal()}
           >
             {" "}
-            My MODAL
+            Click here !
           </button>
         </div>
 
