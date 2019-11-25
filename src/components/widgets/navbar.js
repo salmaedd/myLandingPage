@@ -1,7 +1,8 @@
 import React from "react";
 import instagram from "../icons/navbar/instagram.png";
 import linkedin from "../icons/navbar/linkedin.svg";
-import Snowflake from "../icons/navbar/Snowflake.svg";
+import Snowflake from "../icons/navbar/snowflake.svg";
+
 import "../../sass/navbar.scss";
 import $ from "jquery";
 

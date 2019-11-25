@@ -16,10 +16,7 @@ const routing = (
   <Router>
     <Route path="/" component={App} />
     <Route path="/" component={Navbar} />
-
     <Route path="/" component={sidebar} />
-
-    <br></br>
     <div className="style-index">
       <Route path="/" component={headPage} />
       <Route path="/" component={lightBoxImage} />
