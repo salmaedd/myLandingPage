@@ -29,7 +29,7 @@
     "sass-loader": "^8.0.0",
     "simple-react-lightbox": "^1.4.3"
   },
-  "homepage": "https://salmaedd.github.io/myLandingPage/",
+  "homepage": "https://salmaedd.github.io/myLandingPage/index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
