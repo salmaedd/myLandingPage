@@ -13,18 +13,18 @@ import headPage from "./components/widgets/headPage";
 import lightBoxImage from "./components/widgets/lightBoxImage";
 
 const routing = (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Route path="/" component={App} />
     <Route path="/" component={Navbar} />
     <Route path="/" component={sidebar} />
     <div className="style-index">
       <Route path="/" component={headPage} />
-      <Route path="/" component={lightBoxImage} />
-      <Route path="/" component={Carrousel} />
+      <Route path="/Home" component={lightBoxImage} />
+      <Route path="/Home" component={Carrousel} />
       <br></br>
-      <Route path="/" component={myModal} />
+      <Route Link="/Home" component={myModal} />
       <br></br>
-      <Route path="/" component={mySlider} />
+      <Route path="/News" component={mySlider} />
     </div>
   </Router>
 );
