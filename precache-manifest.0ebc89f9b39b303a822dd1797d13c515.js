@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0be0844bddedbd54dd45528992cd0e14",
+    "revision": "9fe9c5c59ff8ab871c3836bca141c080",
     "url": "/myLandingPage/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myLandingPage/static/css/2.a43d2b49.chunk.css"
   },
   {
-    "revision": "87e85523a0112dda9bd0",
+    "revision": "b94851c35efeb2136fa3",
     "url": "/myLandingPage/static/css/main.3060dc96.chunk.css"
   },
   {
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myLandingPage/static/js/2.59c0d396.chunk.js"
   },
   {
-    "revision": "87e85523a0112dda9bd0",
-    "url": "/myLandingPage/static/js/main.26e8833a.chunk.js"
+    "revision": "b94851c35efeb2136fa3",
+    "url": "/myLandingPage/static/js/main.bc8c76a5.chunk.js"
   },
   {
     "revision": "2e562408fc05d5dd5759",
     "url": "/myLandingPage/static/js/runtime-main.9e27a4ff.js"
-  },
-  {
-    "revision": "e34a621810980a5081cde5180f4539b8",
-    "url": "/myLandingPage/static/media/Snowflake.e34a6218.svg"
   },
   {
     "revision": "b4e819d6c1ef32457dbb0a114762e55c",
@@ -78,5 +74,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "50858175eb60301768419c4d52985694",
     "url": "/myLandingPage/static/media/silhouette.50858175.jpg"
+  },
+  {
+    "revision": "e34a621810980a5081cde5180f4539b8",
+    "url": "/myLandingPage/static/media/snowflake.e34a6218.svg"
   }
 ]);
