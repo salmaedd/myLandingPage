@@ -19,8 +19,8 @@ const routing = (
     <Route path="/" component={sidebar} />
     <div className="style-index">
       <Route path="/" component={headPage} />
-      <Route path="/" component={lightBoxImage} />
-      <Route path="/" component={Carrousel} />
+      <Route path="/Home" component={lightBoxImage} />
+      <Route path="/Home" component={Carrousel} />
       <Route Link="/" component={myModal} />
       <Route path="/" component={mySlider} />
     </div>
