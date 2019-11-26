@@ -1,8 +1,9 @@
 .carrousel-style {
   text-align: center;
   margin: "auto";
-  padding-left: 159px;
-  padding-right: 159px;
+  padding-left: 141px;
+  padding-right: 141px;
+  margin-top: 20px;
   max-width: 100%; }
 
 .carrousel-style .div {
