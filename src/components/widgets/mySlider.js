@@ -1,9 +1,9 @@
 import React from "react";
 import classNames from "classnames";
 
-import "../../sass/mySlider.scss";
+import "../../sass/MySlider.scss";
 
-class mySlider extends React.Component {
+class MySlider extends React.Component {
   constructor(props) {
     super(props);
     // number of pictures from 0 to 4
@@ -123,4 +123,4 @@ class mySlider extends React.Component {
     );
   }
 }
-export default mySlider;
+export default MySlider;

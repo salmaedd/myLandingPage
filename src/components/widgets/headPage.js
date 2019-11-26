@@ -2,9 +2,9 @@ import React from "react";
 import avatar from "../icons/avatar.png";
 import Popup from "reactjs-popup";
 
-import "../../sass/headPage.scss";
+import "../../sass/HeadPage.scss";
 
-class headPage extends React.Component {
+class HeadPage extends React.Component {
   render() {
     return (
       <div className="row headpage">
@@ -27,4 +27,4 @@ class headPage extends React.Component {
     );
   }
 }
-export default headPage;
+export default HeadPage;

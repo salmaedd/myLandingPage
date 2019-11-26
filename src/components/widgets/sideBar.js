@@ -1,8 +1,8 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
-import "../../sass/sideBar.scss";
+import "../../sass/SideBar.scss";
 
-class sideBar extends React.Component {
+class SideBar extends React.Component {
   render() {
     return (
       <div className="sidenav">
@@ -50,4 +50,4 @@ class sideBar extends React.Component {
     );
   }
 }
-export default sideBar;
+export default SideBar;

@@ -1,5 +1,5 @@
 // @flow
-import "../../sass/carrousel.scss";
+import "../../sass/Carrousel.scss";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import pic1 from "../icons/carrouselIcons/birdeyes.jpg";

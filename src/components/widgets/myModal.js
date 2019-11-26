@@ -2,9 +2,9 @@ import React from "react";
 import Modal from "react-awesome-modal";
 import modal1 from "../icons/myModal/archi.jpg";
 
-import "../../sass/myModal.scss";
+import "../../sass/MyModal.scss";
 
-class myModal extends React.Component {
+class MyModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -63,4 +63,4 @@ class myModal extends React.Component {
     );
   }
 }
-export default myModal;
+export default MyModal;

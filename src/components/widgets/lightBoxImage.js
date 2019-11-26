@@ -1,7 +1,7 @@
 import React from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import "../../sass/lightBoxImage.scss";
+import "../../sass/LightBoxImage.scss";
 
 const images = [
   "https://mir-s3-cdn-cf.behance.net/project_modules/1400/12d1ef52461471.5911b7cb23e21.jpg/1400/1800",
@@ -9,7 +9,7 @@ const images = [
   "https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5ec8ca52461471.5911b7cb25660.jpg/1400/1800"
 ];
 
-class lightBoxImage extends React.Component {
+class LightBoxImage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -91,4 +91,4 @@ class lightBoxImage extends React.Component {
     );
   }
 }
-export default lightBoxImage;
+export default LightBoxImage;

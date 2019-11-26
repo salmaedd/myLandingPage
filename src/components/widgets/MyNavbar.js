@@ -3,14 +3,14 @@ import instagram from "../icons/navbar/instagram.png";
 import linkedin from "../icons/navbar/linkedin.svg";
 import Snowflake from "../icons/navbar/snowflake.svg";
 
-import "../../sass/navbar.scss";
+import "../../sass/Navbar.scss";
 import $ from "jquery";
 
 $(".nav-link").click(function() {
   $(".nav-item").removeClass("active");
   $(this).addClass("active");
 });
-function myNavbar() {
+function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <a className="navbar-brand ml-5 font-weight-bold" href="/Home">
@@ -90,4 +90,4 @@ function myNavbar() {
   );
 }
 
-export default myNavbar;
+export default MyNavbar;
