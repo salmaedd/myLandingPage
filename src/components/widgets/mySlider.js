@@ -76,7 +76,7 @@ class mySlider extends React.Component {
     return (
       <div className="mySlider">
         <div className={classNames("slider1", { "s--ready": sliderReady })}>
-          <p className="slider1__top-heading">Travelers</p>
+          <p className="slider1__top-heading">MINIM</p>
           <div className="slider1__slides">
             {this.slides.map((slide, index) => (
               <div
@@ -87,14 +87,14 @@ class mySlider extends React.Component {
                 key={slide.city}
               >
                 <div className="slider1__slide-content">
-                  <h3 className="slider1__slide-subheading">
+                  <h5 className="slider1__slide-subheading">
                     {slide.country || slide.city}
-                  </h3>
-                  <h2 className="slider1__slide-heading">
+                  </h5>
+                  <h4 className="slider1__slide-heading">
                     {slide.city.split("").map(l => (
                       <span>{l}</span>
                     ))}
-                  </h2>
+                  </h4>
                   <p className="slider1__slide-readmore">read more</p>
                 </div>
                 <div className="slider1__slide-parts">

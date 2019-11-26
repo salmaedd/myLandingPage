@@ -6,8 +6,9 @@
   padding: 0; }
 
 .mySlider {
-  padding-left: 153px;
-  padding-right: 123px;
+  margin-top: 20px;
+  padding-left: 165px;
+  padding-right: 157px;
   height: 20%;
   bottom: 0; }
 
@@ -16,7 +17,7 @@
     padding-left: 0px;
     padding-right: 0px;
     height: 20%;
-    margin-top: -24px; } }
+    margin-top: 24px; } }
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;

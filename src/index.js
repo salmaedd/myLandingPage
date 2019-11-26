@@ -21,10 +21,8 @@ const routing = (
       <Route path="/" component={headPage} />
       <Route path="/" component={lightBoxImage} />
       <Route path="/" component={Carrousel} />
-      <br></br>
       <Route Link="/" component={myModal} />
-      <br></br>
-      <Route path="/News" component={mySlider} />
+      <Route path="/" component={mySlider} />
     </div>
   </Router>
 );
