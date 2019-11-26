@@ -13,7 +13,10 @@ $(".nav-link").click(function() {
 function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <a className="navbar-brand ml-5 font-weight-bold" href="/Home">
+      <a
+        className="navbar-brand ml-5 font-weight-bold"
+        href={process.env.PUBLIC_URL + "/Home"}
+      >
         <img src={Snowflake} alt="Snowflake" style={{ width: "30px" }} />
       </a>
 
