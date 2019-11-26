@@ -1,3 +1,5 @@
+// @flow
+import "../../sass/carrousel.scss";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import pic1 from "../icons/carrouselIcons/birdeyes.jpg";
@@ -9,9 +11,7 @@ import pic6 from "../icons/carrouselIcons/highquality.jpg";
 import pic9 from "../icons/carrouselIcons/modern.jpg";
 import pic10 from "../icons/carrouselIcons/silhouette.jpg";
 import pic11 from "../icons/carrouselIcons/bg-2.jpg";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "../../sass/carrousel.scss";
 
 function Carrousel() {
   return (

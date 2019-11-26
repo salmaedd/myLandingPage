@@ -1,6 +1,59 @@
+# My Landing Page
+
+## Overwiew
+
+Repository for the MyLandingPage App.
+
+The technologies used are the following :
+
+- `reactjs` for most of the code
+  - `css/sass` for state management
+- `flow` for static type checking
+
+## Getting started
+
+Clone the repo
+
+```bash
+cd /Users/user/my_project # Replace with your own path
+git clone https://github.com/salmaedd/myLandingPage.git
+```
+
+## Prerequisites
+
+- `yarn` >=1.19.1
+- `node` >=v10.0.0
+
+# install dependencies from npm
+
+npm install
+
+# start the app
+
+npm start
+
+## IDE Configuration
+
+### VS Code
+
+Recommended extensions:
+
+- ESLint
+- Flow Language Support
+- Prettier
+
+Don't forget to remove Javascript and Typescript Extension (buil-in extension), without that the VSCode flow extension won't work ! (Cf Flow Language Support extension description)
+
+### Delivery process
+
+Builds are triggered when commits are pushed to the following branches :
+
+- `master` for the master environment
+- `gh-pages` for the production environment
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts with YARN
 
 In the project directory, you can run:
 
