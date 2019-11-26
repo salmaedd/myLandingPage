@@ -7,7 +7,7 @@ Repository for the MyLandingPage App.
 The technologies used are the following :
 
 - `reactjs` for most of the code
-  - `css/sass` for state management
+  - `css/sass` preprocessor scripting language
 - `flow` for static type checking
 
 ## Getting started
