@@ -1,12 +1,12 @@
 import React from "react";
 import instagram from "../icons/navbar/instagram.png";
 import linkedin from "../icons/navbar/linkedin.svg";
-import Snowflake from "../icons/navbar/snowflake.svg";
+import Snowflake from "../icons/navbar/Snowflake.svg";
 
-import "../../sass/Navbar.scss";
+//import "../../sass/Navbar.scss";
 import $ from "jquery";
 
-$(".nav-link").click(function() {
+$(".nav-link").click(function () {
   $(".nav-item").removeClass("active");
   $(this).addClass("active");
 });
@@ -60,7 +60,7 @@ function MyNavbar() {
             <a
               className="nav-link text-white text-uppercase ml-5"
               href="https://www.instagram.com/"
-            >
+            >ù
               <img src={instagram} alt="instagram" style={{ width: "30px" }} />
             </a>
           </li>

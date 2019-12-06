@@ -1,0 +1,144 @@
+.home {
+  text-align: center;
+  margin-top: 100px;
+  max-width: 100%; }
+
+.HomeImage {
+  width: 470px;
+  height: 350px; }
+
+.HomeA {
+  padding-right: 20px; }
+
+.HomeA1 {
+  padding-left: 20px; }
+
+.p1 {
+  font-size: 45px; }
+
+.p2 {
+  font-size: 12px; }
+
+.p3 {
+  font-size: 12px;
+  color: #3d3c3c; }
+
+.p4 {
+  font-size: 12px;
+  color: #3d3c3c; }
+
+.p5 {
+  font-size: 12px;
+  color: #3d3c3c; }
+
+.p6 {
+  font-size: 12px;
+  color: #3d3c3c; }
+
+.p7 {
+  font-size: 12px;
+  color: #3d3c3c; }
+
+.p8 {
+  font-size: 35px; }
+
+.p1:hover {
+  font-size: 50px; }
+
+.p2:hover {
+  font-size: 20px;
+  color: #3d3c3c; }
+
+.p3:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #3d3c3c; }
+
+.p4:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #3d3c3c; }
+
+.p5:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #3d3c3c; }
+
+.p6:hover {
+  font-size: 20px;
+  color: #3d3c3c; }
+
+.p7:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #3d3c3c; }
+
+.p8:hover {
+  font-size: 40px; }
+
+.myButton {
+  margin-top: 155px; }
+
+@media screen and (max-width: 600px) {
+  .home {
+    margin-top: 100px;
+    width: 100%; }
+  .HomeImage {
+    width: 470px;
+    height: 350px; }
+  .HomeA {
+    padding-left: 99px; }
+  .HomeA1 {
+    padding-right: 20px; }
+  .p1 {
+    font-size: 45px;
+    display: block;
+    padding-left: 43%;
+    padding-right: 35%; }
+  .p2 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%; }
+  .p3 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    color: #3d3c3c; }
+  .p4 {
+    font-size: 12px;
+    display: block;
+    margin-left: auto;
+    padding-left: 50%;
+    padding-right: 35%;
+    color: #3d3c3c; }
+  .p5 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    padding-bottom: 50px;
+    color: #3d3c3c; }
+  .p6 {
+    margin-top: 50px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    font-size: 12px;
+    color: #3d3c3c; }
+  .p7 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    color: #3d3c3c; }
+  .p8 {
+    font-size: 35px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%; }
+  .myButton {
+    margin-top: 40px;
+    margin-left: 43%;
+    margin-right: 15%; } }

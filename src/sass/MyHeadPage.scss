@@ -1,0 +1,57 @@
+.mynavbar {
+  max-width: 100%;
+}
+
+.mynavbar .bg-light {
+  background-color: #ffffff !important;
+  max-width: 100%;
+}
+.image {
+  width: 38px;
+  margin-left: 50px;
+  max-width: 100%;
+}
+
+.searchimage {
+  width: 20px;
+  margin-left: 80px;
+  max-width: 100%;
+}
+.h3 {
+  margin-left: 380px;
+  max-width: 100%;
+}
+.save {
+  margin-left: 90px;
+  max-width: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .mynavbar {
+    max-width: 100%;
+  }
+
+  .mynavbar .bg-light {
+    background-color: #ffffff !important;
+    max-width: 100%;
+  }
+  .image {
+    width: 38px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+
+  .searchimage {
+    width: 20px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .h3 {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .save {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+}
