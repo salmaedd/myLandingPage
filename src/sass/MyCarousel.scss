@@ -3,6 +3,7 @@
   margin-top: 100px;
   max-width: 100%;
 }
+
 .HomeImage {
   width: 470px;
   height: 350px;
@@ -42,7 +43,6 @@
 .p8 {
   font-size: 35px;
 }
-
 .p1:hover {
   font-size: 50px;
 }
@@ -52,17 +52,15 @@
 }
 .p3:hover {
   font-size: 20px;
-  text-decoration: underline;
   color: rgb(61, 60, 60);
 }
 .p4:hover {
   font-size: 20px;
-  text-decoration: underline;
+
   color: rgb(61, 60, 60);
 }
 .p5:hover {
   font-size: 20px;
-  text-decoration: underline;
   color: rgb(61, 60, 60);
 }
 .p6:hover {
@@ -71,7 +69,7 @@
 }
 .p7:hover {
   font-size: 20px;
-  text-decoration: underline;
+
   color: rgb(61, 60, 60);
 }
 .p8:hover {
@@ -82,6 +80,88 @@
 }
 // media query for mobile carrousel
 @media screen and (max-width: 600px) {
+  .home {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .HomeImage {
+    width: 470px;
+    height: 350px;
+  }
+  .HomeA {
+    padding-left: 99px;
+  }
+  .HomeA1 {
+    padding-right: 20px;
+  }
+  .p1 {
+    font-size: 45px;
+    display: block;
+    padding-left: 43%;
+    padding-right: 35%;
+  }
+  .p2 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+  }
+  .p3 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    color: rgb(61, 60, 60);
+  }
+  .p4 {
+    font-size: 12px;
+    display: block;
+    margin-left: auto;
+    padding-left: 50%;
+    padding-right: 35%;
+
+    color: rgb(61, 60, 60);
+  }
+  .p5 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    padding-bottom: 50px;
+    color: rgb(61, 60, 60);
+  }
+  .p6 {
+    margin-top: 50px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+    font-size: 12px;
+
+    color: rgb(61, 60, 60);
+  }
+  .p7 {
+    font-size: 12px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+
+    color: rgb(61, 60, 60);
+  }
+  .p8 {
+    font-size: 35px;
+    display: block;
+    padding-left: 50%;
+    padding-right: 35%;
+  }
+  .myButton {
+    margin-top: 40px;
+    margin-left: 43%;
+    margin-right: 15%;
+  }
+}
+
+// media query for web carrousel
+@media screen and (max-width: 800px) {
   .home {
     margin-top: 100px;
     width: 100%;
@@ -123,7 +203,6 @@
     margin-left: auto;
     padding-left: 50%;
     padding-right: 35%;
-
     color: rgb(61, 60, 60);
   }
   .p5 {
@@ -140,7 +219,6 @@
     padding-left: 50%;
     padding-right: 35%;
     font-size: 12px;
-
     color: rgb(61, 60, 60);
   }
   .p7 {
@@ -148,7 +226,6 @@
     display: block;
     padding-left: 50%;
     padding-right: 35%;
-
     color: rgb(61, 60, 60);
   }
   .p8 {

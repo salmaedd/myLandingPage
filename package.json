@@ -25,7 +25,8 @@
     "react-tooltip": "^3.11.1",
     "reactjs-popup": "^1.5.0",
     "sass-loader": "^8.0.0",
-    "simple-react-lightbox": "^1.4.3"
+    "simple-react-lightbox": "^1.4.3",
+    "sweetalert2-react": "^0.8.3"
   },
   "homepage": "https://salmaedd.github.io/myLandingPage/",
   "scripts": {

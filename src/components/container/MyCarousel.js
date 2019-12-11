@@ -8,6 +8,10 @@ import pic1 from "../icons/MyCarousel/pic1.PNG"
 import pic2 from "../icons/MyCarousel/pic2.PNG"
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import SweetAlert from 'sweetalert2-react';
+
+
+
 
 
 const images = [
@@ -28,6 +32,7 @@ class MyCarousel extends React.Component {
         }
         this.goToPrevSlide = this.goToPrevSlide.bind(this);
         this.goToNextSlide = this.goToNextSlide.bind(this);
+        //  this.callMyModal = this.callMyModal.bind(this);
 
     }
 
@@ -48,112 +53,107 @@ class MyCarousel extends React.Component {
         const { photoIndex, isOpen } = this.state;
         return (
             <div className="home">
-                <div className="row">
-                    <div className="col" >
-                        <p className="p1 font-weight-bold">
-                            Shop
+                <div class="container">
+                    <div className="row">
+                        <div className="col" >
+                            <p className="p1 font-weight-bold">
+                                Shop
                        </p>
-                        <p className="p2 font-weight-bold">
-                            Home Furnishings
+                            <p className="p2 font-weight-bold">
+                                Home Furnishings
                         </p>
-                        <p className="p3">
-                            Accessories
+                            <p className="p3">
+                                Accessories
                         </p>
-                        <p className="p4">
-                            Sports
+                            <p className="p4">
+                                Sports
                         </p>
-                        <p className="p5">
-                            Clothings wear
+                            <p className="p5">
+                                Clothings wear
                         </p>
-
-
-                    </div>
-                    <div className="col">
-                        <img className="HomeImage" src={this.pictures[this.state.currentIndex]} width="300" height="300" alt="images" />
-                        <br />
-                        <br />
-                        <a className="HomeA" onClick={this.goToPrevSlide} href>
-                            <img src={back} alt="back" width="30">
-                            </img>
-                        </a>
-                        <a className="HomeA1" onClick={this.goToNextSlide} href>
-                            <img src={next} alt="next" width="30">
-                            </img>
-                        </a>
-                        <br />
-                    </div>
-                    <br></br>
-                    <br></br>
-
-
-                    <div className="col ">
-                        <p className="p6 font-weight-bold">
-                            1.0                       </p>
+                        </div>
+                        <div className="col">
+                            <img className="HomeImage" src={this.pictures[this.state.currentIndex]} width="300" height="300" alt="images" />
+                            <br />
+                            <br />
+                            <a className="HomeA" onClick={this.goToPrevSlide} href>
+                                <img src={back} alt="back" width="30">
+                                </img>
+                            </a>
+                            <a className="HomeA1" onClick={this.goToNextSlide} href>
+                                <img src={next} alt="next" width="30">
+                                </img>
+                            </a>
+                            <br />
+                        </div>
                         <br></br>
                         <br></br>
-                        <br></br>
-
-                        <p className="p7">
-                            Limited Edition
+                        <div className="col">
+                            <p className="p6 font-weight-bold">
+                                1.0                       </p>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <p className="p7">
+                                Limited Edition
                         </p>
-
-
-                        <p className="p8 font-weight-bold">
-                            White Clock
+                            <p className="p8 font-weight-bold">
+                                White Clock
                         </p>
-                        <button type="button" className=" myButton btn btn-dark" >Shop now</button>
-                    </div>
-                </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className="row">
-                    <div className="col" >
-                        <a className="HomeA1" onClick={() => this.setState({ isOpen: true })}
-                            href>
-                            <img src={pic1} alt="pic1" width="560">
-                            </img>
-                        </a></div>
-                    <div className="col" >
-                        <a className="HomeA1" onClick={() => this.setState({ isOpen: true })}
-                            href>
-                            <img src={pic2} alt="pic2" width="560">
-                            </img>
-                        </a>
-
-                        {isOpen && (
-                            <Lightbox
-                                //choose the first picture
-                                mainSrc={images[photoIndex]}
-                                //choose the next picture
-                                nextSrc={images[(photoIndex + 1) % images.length]}
-                                //choose the previous picture
-                                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                                //close the slider of pictures
-                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                //click on the previous arrow to go to the next picture
-                                onMovePrevRequest={() =>
-                                    this.setState({
-                                        photoIndex: (photoIndex + images.length - 1) % images.length
-                                    })
-                                }
-                                //click on the next arrow to go to the next picture
-                                onMoveNextRequest={() =>
-                                    this.setState({
-                                        photoIndex: (photoIndex + 1) % images.length
-                                    })
-                                }
+                            <button type="button" className=" myButton btn btn-dark" onClick={() => this.setState({ show: true })} >Shop now</button>
+                            <SweetAlert
+                                show={this.state.show}
+                                title="Added to your cart"
+                                text="Thank you !!"
+                                onConfirm={() => this.setState({ show: false })}
                             />
-                        )}
+                        </div>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="row">
+                        <div className="col" >
+                            <a onClick={() => this.setState({ isOpen: true })}
+                                href>
+                                <img className="pic1" src={pic1} alt="pic1" width="540">
+                                </img>
+                            </a></div>
+                        <div className="col" >
+                            <a onClick={() => this.setState({ isOpen: true })}
+                                href>
+                                <img className="pic2" src={pic2} alt="pic2" width="540">
+                                </img>
+                            </a>
+                            {isOpen && (
+                                <Lightbox
+                                    //choose the first picture
+                                    mainSrc={images[photoIndex]}
+                                    //choose the next picture
+                                    nextSrc={images[(photoIndex + 1) % images.length]}
+                                    //choose the previous picture
+                                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                                    //close the slider of pictures
+                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                    //click on the previous arrow to go to the next picture
+                                    onMovePrevRequest={() =>
+                                        this.setState({
+                                            photoIndex: (photoIndex + images.length - 1) % images.length
+                                        })
+                                    }
+                                    //click on the next arrow to go to the next picture
+                                    onMoveNextRequest={() =>
+                                        this.setState({
+                                            photoIndex: (photoIndex + 1) % images.length
+                                        })
+                                    }
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
-
-
             </div>
-
-
-
         );
     }
 }
