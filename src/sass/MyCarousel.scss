@@ -3,6 +3,9 @@
   margin-top: 100px;
   max-width: 100%;
 }
+.pic {
+  margin-top: 5%;
+}
 
 .HomeImage {
   width: 470px;
@@ -76,6 +79,7 @@
   font-size: 40px;
 }
 .myButton {
+  margin-left: 52px;
   margin-top: 155px;
 }
 // media query for mobile carrousel
@@ -84,79 +88,66 @@
     margin-top: 100px;
     width: 100%;
   }
+  .MyRow {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p1 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p2 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p3 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p4 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p5 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p6 {
+    margin-top: 80px;
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p7 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
+  .p8 {
+    margin-left: 50%;
+    margin-right: 20%;
+  }
   .HomeImage {
     width: 470px;
     height: 350px;
   }
-  .HomeA {
-    padding-left: 99px;
-  }
-  .HomeA1 {
-    padding-right: 20px;
-  }
-  .p1 {
-    font-size: 45px;
-    display: block;
-    padding-left: 43%;
-    padding-right: 35%;
-  }
-  .p2 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-  }
-  .p3 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    color: rgb(61, 60, 60);
-  }
-  .p4 {
-    font-size: 12px;
-    display: block;
-    margin-left: auto;
-    padding-left: 50%;
-    padding-right: 35%;
 
-    color: rgb(61, 60, 60);
-  }
-  .p5 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    padding-bottom: 50px;
-    color: rgb(61, 60, 60);
-  }
-  .p6 {
-    margin-top: 50px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    font-size: 12px;
-
-    color: rgb(61, 60, 60);
-  }
-  .p7 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-
-    color: rgb(61, 60, 60);
-  }
-  .p8 {
-    font-size: 35px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-  }
   .myButton {
     margin-top: 40px;
-    margin-left: 43%;
-    margin-right: 15%;
+    margin-left: 27%;
+  }
+  .pic {
+    width: 443px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .HomeA {
+    padding-left: 42%;
+
+    //  padding-right: 20px;
+  }
+  .HomeA1 {
+    padding-right: 2%;
+
+    // padding-left: 20px;
   }
 }
 
@@ -171,72 +162,24 @@
     width: 470px;
     height: 350px;
   }
+
+  .pic {
+    width: 443px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .HomeA {
-    padding-left: 99px;
+    padding-left: 42%;
+
+    //  padding-right: 20px;
   }
   .HomeA1 {
-    padding-right: 20px;
-  }
-  .p1 {
-    font-size: 45px;
-    display: block;
-    padding-left: 43%;
-    padding-right: 35%;
-  }
-  .p2 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-  }
-  .p3 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
+    padding-right: 2%;
 
-    color: rgb(61, 60, 60);
-  }
-  .p4 {
-    font-size: 12px;
-    display: block;
-    margin-left: auto;
-    padding-left: 50%;
-    padding-right: 35%;
-    color: rgb(61, 60, 60);
-  }
-  .p5 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    padding-bottom: 50px;
-    color: rgb(61, 60, 60);
-  }
-  .p6 {
-    margin-top: 50px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    font-size: 12px;
-    color: rgb(61, 60, 60);
-  }
-  .p7 {
-    font-size: 12px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
-    color: rgb(61, 60, 60);
-  }
-  .p8 {
-    font-size: 35px;
-    display: block;
-    padding-left: 50%;
-    padding-right: 35%;
+    // padding-left: 20px;
   }
   .myButton {
     margin-top: 40px;
-    margin-left: 43%;
-    margin-right: 15%;
+    margin-left: 27%;
   }
 }

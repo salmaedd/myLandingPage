@@ -24,8 +24,16 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  max-width: 190px; }
+  margin-bottom: 10px; }
+
+#wrapper .text {
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  visibility: hidden; }
+
+#wrapper:hover .text {
+  visibility: visible; }
 
 .para {
   font-size: 12px;
@@ -41,3 +49,18 @@
   font-size: 12px;
   color: #464444;
   margin-left: 10px; }
+
+@media screen and (max-width: 600px) {
+  .MyProductContainer {
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%; }
+  .Mycontainer {
+    margin-left: 32%;
+    margin-right: 32%; }
+  .imgprod {
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; } }

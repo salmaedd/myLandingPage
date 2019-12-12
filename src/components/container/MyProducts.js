@@ -42,9 +42,8 @@ class MyProducts extends React.Component {
         return (
             <div className="MyProduct" >
                 <div class="container">
-                    <div className="row">
+                    <div className="row Mycontainer">
                         <div className="col-sm-1" >
-
                         </div>
                         <div className="col-sm-2" >
                             <a className="btn" href>
@@ -92,10 +91,29 @@ class MyProducts extends React.Component {
                         </div>
                     </div>
                     {this.state.visible === true ? (
-                        <div className="MyProductContainer">
+                        <div className="MyProductContainer Mycontainer">
                             <div className="row">
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod9} alt="prod9" width="190">
+                                <div className="col-sm" >
+                                    <div id="wrapper">
+                                        <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
+                                        <p class="text"></p>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod4} alt="prod4" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -111,8 +129,8 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod10} alt="prod10" width="190">
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod3} alt="prod3" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -128,45 +146,12 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod3} alt="prod3" width="190">
-                                    </img>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para font-weight-bold "> Picklesuit </p>
-                                        </div>
-                                        <div className="col" >
-                                            <p className="para1">  John Dealson </p>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para2"> 150.00$ </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod4} alt="prod4" width="190">
-                                    </img>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para font-weight-bold "> Picklesuit </p>
-                                        </div>
-                                        <div className="col" >
-                                            <p className="para1">  John Dealson </p>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para2"> 150.00$ </p>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <br></br>
                             <div className="row">
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod5} alt="prod5" width="190">
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod5} alt="prod5" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -182,8 +167,8 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod6} alt="prod6" width="190">
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod6} alt="prod6" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -199,8 +184,8 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod7} alt="prod7" width="190">
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod7} alt="prod7" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -216,8 +201,33 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3" >
-                                    <img className="imgprod" src={prod8} alt="prod8" width="190">
+
+                            </div>
+
+
+
+                            <div className="row">
+                                <div className="col-sm" >
+                                    <div id="wrapper">
+                                        <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
+                                        <p class="text"></p>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod10} alt="prod10" width="230">
                                     </img>
                                     <div className="row">
                                         <div className="col" >
@@ -233,16 +243,34 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="col-sm" >
+                                    <img className="imgprod" src={prod8} alt="prod8" width="230">
+                                    </img>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     )
                         :
 
                         (
-                            <div className="MyProductContainer">
+                            <div className="MyProductContainer Mycontainer">
                                 <div className="row">
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod11} alt="prod11" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod11} alt="prod11" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -258,8 +286,8 @@ class MyProducts extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod12} alt="prod12" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod12} alt="prod12" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -276,25 +304,8 @@ class MyProducts extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod13} alt="prod13" width="190">
-                                        </img>
-                                        <div className="row">
-                                            <div className="col" >
-                                                <p className="para font-weight-bold "> Picklesuit </p>
-                                            </div>
-                                            <div className="col" >
-                                                <p className="para1">  John Dealson </p>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col" >
-                                                <p className="para2"> 150.00$ </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod14} alt="prod14" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod13} alt="prod13" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -313,8 +324,8 @@ class MyProducts extends React.Component {
                                 </div>
                                 <br></br>
                                 <div className="row">
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod15} alt="prod15" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod15} alt="prod15" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -330,8 +341,8 @@ class MyProducts extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod11} alt="prod11" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod11} alt="prod11" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -347,26 +358,8 @@ class MyProducts extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod15} alt="prod15" width="190">
-                                        </img>
-                                        <div className="row">
-                                            <div className="col" >
-                                                <p className="para font-weight-bold "> Picklesuit </p>
-                                            </div>
-                                            <div className="col" >
-                                                <p className="para1">  John Dealson </p>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col" >
-                                                <p className="para2"> 150.00$ </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-3" >
-                                        <img className="imgprod" src={prod13} alt="prod13" width="190">
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod15} alt="prod15" width="230">
                                         </img>
                                         <div className="row">
                                             <div className="col" >
@@ -382,13 +375,73 @@ class MyProducts extends React.Component {
 
                                             </div>
                                         </div>
-
                                     </div>
+
+                                </div>
+
+                                <div className="row">
+                                    <div className="col-sm" >
+                                        <div id="wrapper">
+                                            <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
+                                            <p class="text"></p>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para font-weight-bold "> Picklesuit </p>
+                                            </div>
+                                            <div className="col" >
+                                                <p className="para1">  John Dealson </p>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para2"> 150.00$ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod10} alt="prod10" width="230">
+                                        </img>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para font-weight-bold "> Picklesuit </p>
+                                            </div>
+                                            <div className="col" >
+                                                <p className="para1">  John Dealson </p>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para2"> 150.00$ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-sm" >
+                                        <img className="imgprod" src={prod14} alt="prod14" width="230">
+                                        </img>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para font-weight-bold "> Picklesuit </p>
+                                            </div>
+                                            <div className="col" >
+                                                <p className="para1">  John Dealson </p>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col" >
+                                                <p className="para2"> 150.00$ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         )
                     }
                 </div>
+
+
+
             </div>
         );
     }

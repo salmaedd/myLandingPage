@@ -54,7 +54,7 @@ class MyCarousel extends React.Component {
         return (
             <div className="home">
                 <div class="container">
-                    <div className="row">
+                    <div className="row ">
                         <div className="col" >
                             <p className="p1 font-weight-bold">
                                 Shop
@@ -96,10 +96,10 @@ class MyCarousel extends React.Component {
                             <br></br>
                             <p className="p7">
                                 Limited Edition
-                        </p>
+                            </p>
                             <p className="p8 font-weight-bold">
                                 White Clock
-                        </p>
+                            </p>
                             <button type="button" className=" myButton btn btn-dark" onClick={() => this.setState({ show: true })} >Shop now</button>
                             <SweetAlert
                                 show={this.state.show}
@@ -117,13 +117,13 @@ class MyCarousel extends React.Component {
                         <div className="col" >
                             <a onClick={() => this.setState({ isOpen: true })}
                                 href>
-                                <img className="pic1" src={pic1} alt="pic1" width="540">
+                                <img className="pic" src={pic1} alt="pic" width="540">
                                 </img>
                             </a></div>
                         <div className="col" >
                             <a onClick={() => this.setState({ isOpen: true })}
                                 href>
-                                <img className="pic2" src={pic2} alt="pic2" width="540">
+                                <img className="pic" src={pic2} alt="pic" width="540">
                                 </img>
                             </a>
                             {isOpen && (

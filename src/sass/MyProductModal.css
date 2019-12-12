@@ -27,3 +27,20 @@
   top: 7px;
   position: absolute;
   right: 7px; }
+
+.popbtn {
+  text-align: center; }
+
+.swal2-confirm {
+  background-color: #010405 !important;
+  border-left-color: #010405 !important;
+  border-right-color: #010405 !important; }
+
+@media screen and (max-width: 600px) {
+  .img-fluid1 {
+    margin-top: 15%;
+    margin-left: 5%; }
+  .MyButton {
+    margin-bottom: 10%; }
+  .MyButton1 {
+    margin-bottom: 10%; } }

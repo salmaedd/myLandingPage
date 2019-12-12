@@ -27,9 +27,9 @@ class MyProductModal extends React.Component {
     render() {
         return (
             <section className="button-Modal">
-                <div className="col">
+                <div className="col popbtn">
                     <button
-                        className="btn btn-dark"
+                        className="btn btn-dark "
                         value="Open"
                         onClick={() => this.openModal()} >
                         Pop Up !
@@ -37,8 +37,7 @@ class MyProductModal extends React.Component {
                 </div>
                 <Modal
                     visible={this.state.visible}
-                    width="850"
-                    height="400"
+
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}>
                     <div clssName="sidebarmodal">
