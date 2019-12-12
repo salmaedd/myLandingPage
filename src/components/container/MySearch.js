@@ -77,7 +77,6 @@ class MySearch extends Component {
                         <div className="row ">
                             <div className="col inputstyle">
                                 <Input
-                                    label="Search"
                                     icon="search"
                                     onChange={this.onchange}
                                 />
