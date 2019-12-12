@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Welcome",
+    "code": "WE",
+    "image": 0
+  },
+  {
+    "name": "Brick",
+    "code": "BR",
+    "image": 1
+  },
+  {
+    "name": "Desk",
+    "code": "DE",
+    "image": 2
+  },
+  {
+    "name": "Art",
+    "code": "AR",
+    "image": 3
+  },
+  {
+    "name": "Wall",
+    "code": "TE",
+    "image": 4
+  },
+  {
+    "name": "Coffee",
+    "code": "CO",
+    "image": 5
+  },
+  {
+    "name": "Happy",
+    "code": "HA",
+    "image": 6
+  },
+  {
+    "name": "Light",
+    "code": "LI",
+    "image": 7
+  }
+]

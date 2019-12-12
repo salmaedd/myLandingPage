@@ -1,0 +1,21 @@
+.md-form .prefix {
+  left: 0;
+  top: 12px; }
+
+.card-title {
+  text-align: center;
+  color: grey;
+  font-family: Verdana, Geneva, sans-serif; }
+
+.centerImage {
+  text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .centerImage {
+    text-align: center;
+    margin-top: 10px; }
+  .centerCard {
+    text-align: center;
+    margin-left: 93px; }
+  .inputstyle {
+    width: 240px; } }

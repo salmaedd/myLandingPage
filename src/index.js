@@ -5,6 +5,7 @@ import MyHeadPage from "./components/container/MyHeadPage"
 import MyCarousel from "./components/container/MyCarousel"
 import MyProducts from "./components/container/MyProducts"
 import MyProductModal from "./components/container/MyProductModal"
+import Mysearch from "./components/container/MySearch"
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,6 +26,10 @@ const routing = (
     <br></br>
     <br></br>
     <Route path="/" component={MyProductModal} />
+    <br></br>
+    <br></br>
+    <br></br>
+    <Route path="/" component={Mysearch} />
   </Router>
 );
 ReactDOM.render(routing, document.getElementById("root"));
