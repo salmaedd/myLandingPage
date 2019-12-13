@@ -76,7 +76,6 @@
   font-size: 40px; }
 
 .myButton {
-  margin-left: 52px;
   margin-top: 155px; }
 
 @media screen and (max-width: 600px) {
@@ -126,7 +125,7 @@
   .HomeA1 {
     padding-right: 2%; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .home {
     margin-top: 100px;
     width: 100%; }
@@ -144,3 +143,10 @@
   .myButton {
     margin-top: 40px;
     margin-left: 27%; } }
+
+@media screen and (max-width: 800px) {
+  .home {
+    margin-top: 100px;
+    width: 100%;
+    margin: 0%;
+    margin-left: 0px; } }

@@ -79,7 +79,7 @@
   font-size: 40px;
 }
 .myButton {
-  margin-left: 52px;
+  //margin-left: 52px;
   margin-top: 155px;
 }
 // media query for mobile carrousel
@@ -151,8 +151,8 @@
   }
 }
 
-// media query for web carrousel
-@media screen and (max-width: 800px) {
+// media query for mobile carrousel
+@media screen and (max-width: 500px) {
   .home {
     margin-top: 100px;
     width: 100%;
@@ -181,5 +181,14 @@
   .myButton {
     margin-top: 40px;
     margin-left: 27%;
+  }
+}
+// media query for web carrousel
+@media screen and (max-width: 800px) {
+  .home {
+    margin-top: 100px;
+    width: 100%;
+    margin: 0%;
+    margin-left: 0px;
   }
 }
