@@ -104,7 +104,7 @@ class MyCarousel extends React.Component {
                             <SweetAlert
                                 show={this.state.show}
                                 title="Added to your cart"
-                                text="Thank you !!"
+                                text="Thank you"
                                 onConfirm={() => this.setState({ show: false })}
                             />
                         </div>
@@ -115,17 +115,24 @@ class MyCarousel extends React.Component {
                     <br></br>
                     <div className="row">
                         <div className="col" >
-                            <a onClick={() => this.setState({ isOpen: true })}
-                                href>
-                                <img className="pic" src={pic1} alt="pic" width="540">
-                                </img>
-                            </a></div>
+                            <div id="wrapper">
+                                <a onClick={() => this.setState({ isOpen: true })}
+                                    href>
+                                    <img className="pic" src={pic1} alt="pic" width="540" />
+                                </a>
+                                <p className="text font-weight-bold "> Click Me !</p>
+
+                            </div>
+                        </div>
                         <div className="col" >
-                            <a onClick={() => this.setState({ isOpen: true })}
-                                href>
-                                <img className="pic" src={pic2} alt="pic" width="540">
-                                </img>
-                            </a>
+                            <div id="wrapper">
+                                <a onClick={() => this.setState({ isOpen: true })}
+                                    href>
+                                    <img className="pic" src={pic2} alt="pic" width="540" />
+                                </a>
+                                <p className="text font-weight-bold "> Click Me !</p>
+
+                            </div>
                             {isOpen && (
                                 <Lightbox
                                     //choose the first picture
@@ -153,7 +160,7 @@ class MyCarousel extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

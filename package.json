@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "bootstrap": "^4.3.0",
+    "bootstrap-sweetalert": "^1.0.1",
     "classnames": "^2.2.6",
     "jquery": "^3.4.1",
     "mdbreact": "^4.23.1",

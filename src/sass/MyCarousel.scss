@@ -6,7 +6,20 @@
 .pic {
   margin-top: 5%;
 }
+.pic:hover {
+  opacity: 0.2;
+}
 
+#wrapper .text {
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  visibility: hidden;
+}
+
+#wrapper:hover .text {
+  visibility: visible;
+}
 .HomeImage {
   width: 470px;
   height: 350px;
@@ -139,6 +152,7 @@
     margin-left: 2%;
     margin-right: 2%;
   }
+
   .HomeA {
     padding-left: 42%;
 

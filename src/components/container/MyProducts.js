@@ -15,6 +15,8 @@ import prod14 from "../icons/MyProducts/prod14.png"
 import prod15 from "../icons/MyProducts/prod15.png"
 import back from "../icons/MyCarousel/back.svg"
 import next from "../icons/MyCarousel/next.svg"
+import SweetAlert from 'sweetalert2-react';
+
 
 
 
@@ -29,6 +31,7 @@ class MyProducts extends React.Component {
         this.goToPreviousProducts = this.goToPreviousProducts.bind(this);
         this.goToNextProducts = this.goToNextProducts.bind(this);
 
+
     }
     goToPreviousProducts() {
         this.setState({ visible: true, next: "font-weight-light" });
@@ -38,7 +41,10 @@ class MyProducts extends React.Component {
     goToNextProducts() {
         this.setState({ visible: false, prev: "font-weight-bold" });
     }
+
+
     render() {
+
         return (
             <div className="MyProduct" >
                 <div class="container">
@@ -94,65 +100,74 @@ class MyProducts extends React.Component {
                         <div className="MyProductContainer Mycontainer">
                             <div className="row">
                                 <div className="col-sm" >
-                                    <div id="wrapper">
+                                    <a onClick={() => this.setState({ show: true })} href>
                                         <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
-                                        <p class="text"></p>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para font-weight-bold "> Picklesuit </p>
-                                        </div>
-                                        <div className="col" >
-                                            <p className="para1">  John Dealson </p>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para2"> 150.00$ </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm" >
-                                    <img className="imgprod" src={prod4} alt="prod4" width="230">
-                                    </img>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para font-weight-bold "> Picklesuit </p>
-                                        </div>
-                                        <div className="col" >
-                                            <p className="para1">  John Dealson </p>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para2"> 150.00$ </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm" >
-                                    <img className="imgprod" src={prod3} alt="prod3" width="230">
-                                    </img>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para font-weight-bold "> Picklesuit </p>
-                                        </div>
-                                        <div className="col" >
-                                            <p className="para1">  John Dealson </p>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" >
-                                            <p className="para2"> 150.00$ </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <SweetAlert
+                                            show={this.state.show}
+                                            title=" Successfully Added "
+                                            text="To Your Cart"
+                                            onConfirm={() => this.setState({ show: false })}
 
+                                        />
+                                    </a>
+
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm" >
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod4} alt="prod4" width="230" />
+                                    </a>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm" >
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod3} alt="prod3" width="230" />
+                                    </a>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para font-weight-bold "> Picklesuit </p>
+                                        </div>
+                                        <div className="col" >
+                                            <p className="para1">  John Dealson </p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" >
+                                            <p className="para2"> 150.00$ </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <br></br>
                             <div className="row">
                                 <div className="col-sm" >
-                                    <img className="imgprod" src={prod5} alt="prod5" width="230">
-                                    </img>
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod5} alt="prod5" width="230" />
+                                    </a>
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -168,8 +183,9 @@ class MyProducts extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm" >
-                                    <img className="imgprod" src={prod6} alt="prod6" width="230">
-                                    </img>
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod6} alt="prod6" width="230" />
+                                    </a>
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -185,8 +201,9 @@ class MyProducts extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm" >
-                                    <img className="imgprod" src={prod7} alt="prod7" width="230">
-                                    </img>
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod7} alt="prod7" width="230" />
+                                    </a>
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -201,17 +218,14 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
-
-
                             <div className="row">
                                 <div className="col-sm" >
-                                    <div id="wrapper">
+
+                                    <a onClick={() => this.setState({ show: true })} href>
                                         <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
-                                        <p class="text"></p>
-                                    </div>
+                                    </a>
+
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -227,8 +241,9 @@ class MyProducts extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm" >
-                                    <img className="imgprod" src={prod10} alt="prod10" width="230">
-                                    </img>
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod10} alt="prod10" width="230" />
+                                    </a>
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -244,8 +259,9 @@ class MyProducts extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm" >
-                                    <img className="imgprod" src={prod8} alt="prod8" width="230">
-                                    </img>
+                                    <a onClick={() => this.setState({ show: true })} href>
+                                        <img className="imgprod" src={prod8} alt="prod8" width="230" />
+                                    </a>
                                     <div className="row">
                                         <div className="col" >
                                             <p className="para font-weight-bold "> Picklesuit </p>
@@ -270,8 +286,9 @@ class MyProducts extends React.Component {
                             <div className="MyProductContainer Mycontainer">
                                 <div className="row">
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod11} alt="prod11" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod11} alt="prod11" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -287,8 +304,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod12} alt="prod12" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod12} alt="prod12" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -305,8 +323,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod13} alt="prod13" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod13} alt="prod13" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -325,8 +344,9 @@ class MyProducts extends React.Component {
                                 <br></br>
                                 <div className="row">
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod15} alt="prod15" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod15} alt="prod15" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -342,8 +362,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod11} alt="prod11" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod11} alt="prod11" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -359,8 +380,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod15} alt="prod15" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod15} alt="prod15" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -372,17 +394,16 @@ class MyProducts extends React.Component {
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para2"> 150.00$ </p>
-
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <div className="row">
                                     <div className="col-sm" >
                                         <div id="wrapper">
-                                            <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
+                                            <a onClick={() => this.setState({ show: true })} href>
+                                                <img className="imgprod hover" src={prod9} alt="prod9" width="230" />
+                                            </a>
                                             <p class="text"></p>
                                         </div>
                                         <div className="row">
@@ -400,8 +421,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod10} alt="prod10" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod10} alt="prod10" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>
@@ -417,8 +439,9 @@ class MyProducts extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-sm" >
-                                        <img className="imgprod" src={prod14} alt="prod14" width="230">
-                                        </img>
+                                        <a onClick={() => this.setState({ show: true })} href>
+                                            <img className="imgprod" src={prod14} alt="prod14" width="230" />
+                                        </a>
                                         <div className="row">
                                             <div className="col" >
                                                 <p className="para font-weight-bold "> Picklesuit </p>

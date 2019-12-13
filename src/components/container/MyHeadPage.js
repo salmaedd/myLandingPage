@@ -63,17 +63,17 @@ class MyHeadPage extends React.Component {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="btn h3 " href>
+                                <a className="btn h3 " href="/Home">
                                     <h3 className="font-weight-bold">minim</h3>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="btn h3" href>
+                                <a className="btn h3" href="/Home">
                                     <h5>Account</h5>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className=" btn save" href>
+                                <a className=" btn save" href="/Home">
                                     <i class="fa fa-hdd-o" aria-hidden="true"></i>
                                 </a>
                             </li>

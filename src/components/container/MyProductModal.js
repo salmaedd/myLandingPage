@@ -32,7 +32,7 @@ class MyProductModal extends React.Component {
                         className="btn btn-dark "
                         value="Open"
                         onClick={() => this.openModal()} >
-                        Pop Up !
+                        Need Help !
                     </button>
                 </div>
                 <Modal
